@@ -1,0 +1,199 @@
+
+
+Selenium WebDriver
+======================
+Selenium WebDriver is an Interface
+
+WebDriver is an API to automate WEBUI of application
+
+=============================================================
+SetUp
+===========
+1.Using Java project
+======================
+1.create new java project
+2.download selenium  jar-selenium.dev
+3.right click ob project-->build path--->configure build path--->libraries
+--->class path-->add external jar--->attach jar--->apply
+
+
+==================================
+2.Using Maven Project
+=============================
+2.create Maven project
+
+
+Maven 
+===============
+Maven is build management and Project management tool
+
+Maven has one cofiguration file
+POM.xml file
+======================
+Project Object Model  file 
+its a configuration file where we can setup complete maven project
+POM .xml we need to add required dependecies related to our project
+selenium dependency
+
+what is dependency
+======================
+It is an executable file
+It is library
+=================
+<project>
+
+<dependencies>
+
+	<dependecy>Selenium</dependecy>
+</dependencies>
+
+</project>
+
+===========================
+Maven Support two types Repository
+===================================
+1.Local Repo
+===================
+C://users--->.m2 folder
+
+2.Central/Remote Repo
+========================
+mvnrepository.com
+========================================================
+27-02-2025
+=================
+WebDriver Browser based commands
+==================================
+1.get(url): Open application
+2.getTitle(): get the current title of the page
+3.getPageSource(): get the page source code of any page
+4.getCurrentUrl(): get the current url og the application
+
+Window handling
+===================
+5.getWindowHandle()
+6.getWindowHandles()
+
+7.close(): close the current active browser window
+8.quit(): close all open windows by selenium
+
+===================================================
+
+Selenium Exception
+=====================
+1.org.openqa.selenium.InvalidArgumentException: invalid argument
+when url address is incorrect(missed protocol)
+
+
+=========================================================
+Navigation Commands in Selenium
+===================================
+Selenium provides one Navigation interface
+
+1.to(url):navigate to url/app
+===============
+
+driver.navigate().to(url)
+
+2.back()
+======================
+driver.navigate().back()
+
+
+3.forward()
+======================
+driver.navigate().forward()
+
+4.refresh()
+==================
+driver.navigate().refresh()
+
+========================================================
+What is WebElement?
+======================
+Every GUI(button,link,textbox,dropdown,checkbox..etc) of application is called WebElement
+In Technical word WebElement is interface in selenium to 
+interact with any GUI element
+
+How to automate any WebElement?
+==================================
+1.Identify WebElement from WebPage
+2.Perform action on WebElement
+
+How selenium identify any webelement
+===========================================
+To identify WebElement selenium uses Locators
+
+What is Locator?
+--------------------
+Locator is address of WebElement from Webpage
+
+Selenium support total 8 locators
+==================================
+1.By id (primary)
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.BY tagName
+
+dynamic locators
+==================
+7.By cssSelector
+8.By xpath
+
+What is By
+================
+It is class in selenium
+
+Selenium 4 RelativeLocators
+=============================
+
+
+==========================================================
+1.get the element address using locator
+2.to idetify it from selenium we use method
+
+1.findElement()
+==================
+
+
+2.findElements()
+==================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
