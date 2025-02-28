@@ -83,6 +83,8 @@ Selenium Exception
 =====================
 1.org.openqa.selenium.InvalidArgumentException: invalid argument
 when url address is incorrect(missed protocol)
+2.NoSuchElementException: no such element
+when findElement() fail to identify webelement
 
 
 =========================================================
@@ -109,6 +111,8 @@ driver.navigate().forward()
 driver.navigate().refresh()
 
 ========================================================
+28-02-2025
+=================
 What is WebElement?
 ======================
 Every GUI(button,link,textbox,dropdown,checkbox..etc) of application is called WebElement
@@ -156,10 +160,90 @@ Selenium 4 RelativeLocators
 
 1.findElement()
 ==================
+-findElement() identifies single WebElement
+-findElement() returns WebElement interface object
+-findElement() fail to identify any webelement then it throws exception NoSuchElementException
 
 
 2.findElements()
 ==================
+
+
+=======================================
+WebElement commands
+========================
+
+validation
+---------------
+1.isDisplayed()
+2.isEnabled()
+3.isSelected()
+
+
+Element Action
+================
+link,button,checkbox,radiobutton-->click--->click()
+textbox,searchbox--->enter data--->sendKeys("data",Keys.ENTER);
+
+========================================
+How to automate any hyperlink/link
+--------------------------------------
+
+<a class="nav-link" href="login.html">Sign In</a>
+								<a>		Link Text		</a>
+1.By linkText(full text)
+--------------------------------
+driver.findElement(By.linkText("Sign In")).click()
+
+
+2.By partialLinkText(partial text)
+-----------------------------------
+driver.findElement(By.partialLinkText("In")).click();
+
+==============================================
+By className
+================
+class="btn btn-default btn-primary"
+		c1		c2			c3
+		
+InvalidSelectorException: Compound class names not permitted
+
+From dev tool open finder-->ctrl+F
+identify unique class name and use it for automation
+
+======================================================
+By tagName
+=============
+
+
+Dynamic Locators
+========================
+
+By cssSelector
+=====================
+CSS cascaded style sheet
+It is a language which provide style to Webelement
+
+This is Locator which identify elements based on css property
+
+1.tagname with id
+
+2.tagname with attribute
+
+3.tagname with className
+==============================
+Syntax:
+======
+tagname.className
+
+<input class="btn btn-primary">
+input.btn.btn-primary
+
+
+
+
+
+
 
 
 

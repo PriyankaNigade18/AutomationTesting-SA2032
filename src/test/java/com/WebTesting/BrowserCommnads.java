@@ -22,6 +22,7 @@ public class BrowserCommnads {
 		//get the current url -getCurrentUrl():String
 		System.out.println(driver.getCurrentUrl());
 		
+		
 		//get the page source -getPageSource()
 		System.out.println(driver.getPageSource());
 		
