@@ -13,3 +13,22 @@ Assignment3:
 =============
 Open Facebook app-->Navigate to amazon get the title for both app
 then refresh the page
+
+
+Assignment 4:
+===============
+Automate Naukri page get the total links for this page 
+and get the text and href value for every link
+
+Assignment 5:
+====================
+Automate Crm application login and logout using only cssSelector
+Url: https://automationplayground.com/crm/
+
+Assignment 6:
+==================
+Automate Orangehrm app login and logout with cssSelector
+url:https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+https://www.naukri.com/

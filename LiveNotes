@@ -167,6 +167,9 @@ Selenium 4 RelativeLocators
 
 2.findElements()
 ==================
+-findElements() identifies multiple webElements
+-this method returns List<WebElement>
+-If element not found this method never throws any exception
 
 
 =======================================
@@ -214,21 +217,82 @@ identify unique class name and use it for automation
 ======================================================
 By tagName
 =============
+Number of input boxes
+Number of images
+Number of Buttons
+Number of Links
 
+============================================
+Synchronization Issue:
+============================
+Whenever there is time mapping problem with tool and application
+(Application sometimes need some extra time to load every webelement)
+
+Static Wait
+==============
+Thread.sleep(2000);
+
+Dynamic Wait
+===================
+1.Implicit
+============
+-Implicit wait is global wait
+-It is applicable to all webelement in script
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+===========================
+2.Explicit Wait
+=================
+- It is not global, this wait applicable to every single webelement
+- As per condition we can identify element and apply wait
+
+1.WebDriverWait class
+2.Fluent Wait class
+
+WebDriverWait(c) extends FluentWait(c)implements Wait(I)
+
+pending......
+=============================================================
+
+WebElement IMP commands
+=============================
+1.getText():String
+=====================
+-Any visible text from application it will capture
+-inner html text also it will return
+
+2.getAttribute(Attributename):4.28.0 deprecated--->getDomAttribute(attribute)
+=========================================================================
+- this commands return value for that attribute
 
 Dynamic Locators
 ========================
+1.By cssSelector
+2.By xpath
 
-By cssSelector
+1.By cssSelector
 =====================
 CSS cascaded style sheet
 It is a language which provide style to Webelement
 
-This is Locator which identify elements based on css property
+CssSelector is Locator which identify elements based 
+on css properties of webelement
 
 1.tagname with id
-
+-------------------------
+#input-email
+Syntax:
+===========
+tagname#id
+input#input-email
+-----------------------------------------
 2.tagname with attribute
+------------------------------
+Syntax:
+-------------
+tagname[attributename='value']
+
+input[placeholder='Password']
 
 3.tagname with className
 ==============================
@@ -239,7 +303,8 @@ tagname.className
 <input class="btn btn-primary">
 input.btn.btn-primary
 
-
+4.combination id,classname,attribute
+-------------------------------------
 
 
 
