@@ -18,7 +18,6 @@ public class LocatorDemo6_cssSelector {
 		//password-tagname with attribute
 		driver.findElement(By.cssSelector("input[placeholder='Password']")).sendKeys("test123");
 		
-		
 		//login
 		driver.findElement(By.cssSelector("input.btn-primary")).click();
 

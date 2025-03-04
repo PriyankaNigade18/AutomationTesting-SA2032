@@ -19,6 +19,7 @@ Assignment 4:
 ===============
 Automate Naukri page get the total links for this page 
 and get the text and href value for every link
+https://www.naukri.com/
 
 Assignment 5:
 ====================
@@ -30,5 +31,14 @@ Assignment 6:
 Automate Orangehrm app login and logout with cssSelector
 url:https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
+xpath
+============
+Assignment 7:
+===================
+Automate Orangehrm app login and logout with xpath
+url:https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
-https://www.naukri.com/
+Assignment 8:
+==================
+automate footer links available on amazon, get the count and print everylink in console
+https://www.amazon.in/

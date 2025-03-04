@@ -215,6 +215,8 @@ From dev tool open finder-->ctrl+F
 identify unique class name and use it for automation
 
 ======================================================
+3-03-2025
+=============
 By tagName
 =============
 Number of input boxes
@@ -277,6 +279,10 @@ It is a language which provide style to Webelement
 
 CssSelector is Locator which identify elements based 
 on css properties of webelement
+CssSelector is faster than xpath as cssSelector travel only in one direction
+parent to child
+
+
 
 1.tagname with id
 -------------------------
@@ -303,8 +309,103 @@ tagname.className
 <input class="btn btn-primary">
 input.btn.btn-primary
 
+orangehrm login button
+----------------------------
+oxd-button oxd-button--medium oxd-button--main orangehrm-login-button
+
+button.oxd-button
+
+----------------------------------------------
 4.combination id,classname,attribute
 -------------------------------------
+Syntax:
+===============
+tagname#id.classname[attribute='value']
+
+orangehrm login button
+----------------------------
+button.oxd-button[type='submit']
+
+=======================================================================
+4-03-2025
+===============
+8.By xpath
+==============
+-Xpath is path of the webelement from html/xml document
+-xpath will help you to identify element from html DOM(document object Model)
+-xpath support multiple methods
+-xpath travel in both direction (xpath Axies)
+
+=================================
+HTML DOM
+============
+<html>--------------------root element/node
+<head>
+
+</head>
+
+<body>
+<input>
+<a>----------------------element
+<div>
+
+</body>
+</html>
+
+===============================================
+Types of Xpath
+===========
+1.Absolute xpath(full path)
+----------------------------------
+-Absolute xpath always starts with root node
+-Absolute xpath always starts with '/'
+
+/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+
+2.Relative Xpath(partial path)
+---------------------------------------
+-Relative xpath identify element by its relative property
+-Relative xpath always starts with '//'
+
+//*[@id="input-email"]
+*: All
+
+Syntax:
+=============
+//tagame[@attributename='value']
+
+=============================
+xpath with indexing
+========================
+Syntax:
+==========
+(xpath)[index number]
+position()
+----------------
+(xpath)[position()=indexnumber]
+
+
+==================================================
+xpath methods
+===========
+1.text()
+
+2.normalize-space()
+
+
+3.contains()
+
+4.starts-with()
+
+
+Xpath Axies
+==================
+Following
+
+
+preceding
+
+================================================
 
 
 
