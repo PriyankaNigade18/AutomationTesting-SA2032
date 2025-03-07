@@ -85,6 +85,7 @@ Selenium Exception
 when url address is incorrect(missed protocol)
 2.NoSuchElementException: no such element
 when findElement() fail to identify webelement
+3.ElementNotInteractableException: element not interactable (size issue)
 
 
 =========================================================
@@ -389,21 +390,113 @@ position()
 xpath methods
 ===========
 1.text()
-
+=============
+- it identify element by its visible text
+- It will not work with white space
+Syntax
+===========
+//tagname[text()='text']
+----------------------------------------------
 2.normalize-space()
+======================
+- it identify element by its visible text
+- It will ignorew hite space like trim() of String  class
 
+Syntax:
+==========
+//tagname[normalize-space()='text']
+---------------------------------------------
+3.contains():partial match
+===============
+Syntax:
+===========
+//tagname[contains(@attribute,'partial value')]
 
-3.contains()
+OR
 
-4.starts-with()
+//tagname[contains(text(),'partial text')]
 
+4.starts-with():prefix value
+==================================
+Syntax:
+===========
+//tagname[starts-with(@attribute,'prefix value')]
 
+OR
+
+//tagname[starts-with(text(),'prefix text')]
+
+========================================================
 Xpath Axies
 ==================
-Following
+  <tbody>-----Grand parent for John
+ 
+     <tr>------Parent for John
+ 
+         <td>4</td>-----preceding sibling for john
+
+          <td>John</td>--------Element
+
+          <td>Robinson</td>---following siblings for john
+
+          <td>jr5527</td>
+ 
+         <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>
+
+        </tr>
+</tbody>
+========
+=======================
+1.Ancestor(gp)
+================
+Syntax:
+============
+//tagname[@attribute='value']//ancestor::tagname of ancestor
+
+2.parent
+================
+Syntax:
+============
+//tagname[@attribute='value']//parent::tagname of parent
+
+3.child
+===================
+================
+Syntax:
+============
+//tagname[@attribute='value']//child::tagname of child
+
+4.Following(all after nodes)
+================
+================
+Syntax:
+============
+//tagname[@attribute='value']//following::tagname of follwing ele
+
+5.following-sibling
+================
+Syntax:
+============
+//tagname[@attribute='value']//following-sibling::tagname of sibling ele
 
 
-preceding
+6.preceding(all previous nodes)
+================
+================
+Syntax:
+============
+//tagname[@attribute='value']//preceding::tagname of preceding ele
+
+7.preceding-sibling
+================
+Syntax:
+============
+//tagname[@attribute='value']//preceding-sibling::tagname of sibling ele
+
+
 
 ================================================
 
