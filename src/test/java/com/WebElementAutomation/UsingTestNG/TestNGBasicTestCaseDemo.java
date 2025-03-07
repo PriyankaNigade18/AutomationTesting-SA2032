@@ -2,7 +2,7 @@ package com.WebElementAutomation.UsingTestNG;
 
 import org.testng.annotations.Test;
 
-public class DropdownAutomation_Amazon
+public class TestNGBasicTestCaseDemo
 {
   @Test
   public void testCase1()

@@ -387,6 +387,8 @@ position()
 
 
 ==================================================
+6-3-2025
+===============
 xpath methods
 ===========
 1.text()
@@ -499,6 +501,71 @@ Syntax:
 
 
 ================================================
+7-03-2025
+=============
+1.Dropdown Automation
+===================
+1.Select tag based dropdown
+=============================
+
+Selenium provides Select class
+Select dd=new Select(dropdownElement address);
+
+Is dropdown supported multiple selection
+isMultiple():boolean
+
+Select single value
+------------------
+1.selectByIndex()
+2.selectByValue()
+3.selectByVisibleText()
+
+
+get all the options from the dropdown
+----------------------------
+getOptions():List<WebElement>
+
+
+
+2.Bootstrap/Autosuggession/Javascript
+=================================
+use appropriate locator and automate
+===================================================
+JavascriptExecutor
+=========================
+JavascriptExecutor is interface in Selenium
+Scroll the page
+------------------
+
+
+
+
+
+2.WindowHandling In Selenium
+
+3.Alerts 
+
+4.Frame
+
+5.WebTable Handling
+
+6.JavaScriptExecutor
+
+7.Selenium Waits
+
+8.Capabilities & Headless Testing
+
+9.Actions Class
+
+
+FrameWorks
+================
+1.TestNG
+
+2.Hybrid 
+
+3.Cucumber
+
 
 
 
