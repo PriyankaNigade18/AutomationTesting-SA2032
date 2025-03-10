@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementAutomation.UsingTestNG.JavascriptExecutorDemo">
+      <class name="com.WebElementAutomation.UsingTestNG.AlertHandlingDemo1">
         <methods>
-          <include name="testScroll"/>
+          <include name="testAlert"/>
         </methods>
-      </class> <!-- com.WebElementAutomation.UsingTestNG.JavascriptExecutorDemo -->
+      </class> <!-- com.WebElementAutomation.UsingTestNG.AlertHandlingDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

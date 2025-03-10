@@ -86,7 +86,7 @@ when url address is incorrect(missed protocol)
 2.NoSuchElementException: no such element
 when findElement() fail to identify webelement
 3.ElementNotInteractableException: element not interactable (size issue)
-
+4.UnhandledAlertException: unexpected alert open(skip alert then you will get it)
 
 =========================================================
 Navigation Commands in Selenium
@@ -536,20 +536,56 @@ JavascriptExecutor
 JavascriptExecutor is interface in Selenium
 Scroll the page
 ------------------
+===========================
+10-03-2025
+=============
+2.Window/tab Handling In Selenium
+----------------------------
+1.getWindowHandle(): String: Parent/Active Window session Id
+2.getWindowHandles(): Set<String>: all open windows session Ids
+3.switchTo():target(window/alert/frame)
 
+selenium 4 :New window or any new tab
+--------------------------------
+newWindow():WebDriver interface ref
 
-
-
-
-2.WindowHandling In Selenium
+driver.switchTo().newWindow(WindowType.TAB);
+driver.switchTo().newWindow(WindowType.WINDOW);
+=====================================
 
 3.Alerts 
+=============
+Alert is small window coming from browser
 
+To handle alert Selenium provides Alert Interface
+
+1.switch to alert then handle
+-------------------------
+driver.switchTo().alert();
+
+3 Types of alerts
+======================
+1.Basic alert with Ok button
+2.Confirmation alert
+3.Prompt Alert 
+
+This interface provides 4 methods
+---------------------------------
+1.To get text of the alert: getText()
+2.To perform click on OK: accept()
+3.To perform click on Cancel: dismiss()
+4.To enter any text: sendKeys()
+=========================================
+How to automate Basic Authentication in Selenium
+--------------------------------------------
+URL: https://username:password@www.domain.com
+==============================================
 4.Frame
 
 5.WebTable Handling
 
 6.JavaScriptExecutor
+done
 
 7.Selenium Waits
 

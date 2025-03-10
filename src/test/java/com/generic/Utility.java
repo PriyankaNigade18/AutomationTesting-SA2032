@@ -10,8 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Utility 
 {
-	
-	
+
 	
 	
 	public static void selectBasedDropdown(WebElement ddele,String value)
