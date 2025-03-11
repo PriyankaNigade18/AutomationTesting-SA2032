@@ -87,7 +87,8 @@ when url address is incorrect(missed protocol)
 when findElement() fail to identify webelement
 3.ElementNotInteractableException: element not interactable (size issue)
 4.UnhandledAlertException: unexpected alert open(skip alert then you will get it)
-
+5:StaleElementReferenceException: stale element reference: stale element not found
+When Dom is refreshed and element is not loaded then you will get this exception
 =========================================================
 Navigation Commands in Selenium
 ===================================
@@ -580,8 +581,47 @@ How to automate Basic Authentication in Selenium
 --------------------------------------------
 URL: https://username:password@www.domain.com
 ==============================================
-4.Frame
+11-03-2025
+===========
+4.Frame/IFrame
+====================
+One html document embedded in another html doucment is called frame/iframe
 
+<frame> or <iframe>
+
+1.frame with index
+-------------------------
+driver.switchTo().frame(index);
+
+2.frame with id/name
+-------------------------
+driver.switchTo().frame(id/name);
+
+3.frame with WebElement
+------------------------------
+- identify frame as webelement
+- switch to that frame
+
+driver.switchTo().frame( framewebElement);
+
+Nested Frame
+======================
+1.To switch to main Document or first frame
+driver.switchTo().defualtContent()
+
+2.To Switch to immediate parent frame
+driver.switchTo().parentFrame()
+==========================================================
+9.Actions Class
+===================
+Mouse Operation
+1.rightclick
+2.double click
+3.drag and drop
+4.mouse over: moveToElement()
+5.slider
+
+=========================================================
 5.WebTable Handling
 
 6.JavaScriptExecutor
@@ -590,8 +630,6 @@ done
 7.Selenium Waits
 
 8.Capabilities & Headless Testing
-
-9.Actions Class
 
 
 FrameWorks

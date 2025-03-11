@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebElementAutomation.UsingTestNG.AlertHandlingDemo1">
+      <class name="com.MouseOperation_ActionsClass.SliderAction">
         <methods>
-          <include name="testAlert"/>
+          <include name="testSlider"/>
         </methods>
-      </class> <!-- com.WebElementAutomation.UsingTestNG.AlertHandlingDemo1 -->
+      </class> <!-- com.MouseOperation_ActionsClass.SliderAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
