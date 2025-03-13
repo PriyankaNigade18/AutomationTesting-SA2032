@@ -254,8 +254,7 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 2.Fluent Wait class
 
 WebDriverWait(c) extends FluentWait(c)implements Wait(I)
-
-pending......
+-
 =============================================================
 
 WebElement IMP commands
@@ -614,22 +613,73 @@ driver.switchTo().parentFrame()
 ==========================================================
 9.Actions Class
 ===================
-Mouse Operation
-1.rightclick
+Mouse Operations
+1.right click
 2.double click
 3.drag and drop
 4.mouse over: moveToElement()
 5.slider
 
 =========================================================
+13-03-2025
+============
 5.WebTable Handling
+===================
+scenario
+----------
+Number of Rows
+Number of Columns
+Number of Heading/print
+Specific row
+specific column
+get all the data of table
 
+============================================================
 6.JavaScriptExecutor
 done
 
 7.Selenium Waits
+========================
+Default timeout for Implicit wait: 0
+Default PageLoad timeout: 5mins
 
+Synchronization Issue:
+============================
+Whenever there is time mapping problem with tool and application
+(Application sometimes need some extra time to load every webelement)
+
+Static Wait
+==============
+Thread.sleep(2000);
+
+Dynamic Wait
+===================
+1.Implicit
+============
+-Implicit wait is global wait
+-It is applicable to all webelement in script
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+===========================
+2.Explicit Wait
+=================
+- It is not global, this wait applicable to every single webelement
+- As per condition we can identify element and apply wait
+
+1.WebDriverWait class
+2.Fluent Wait class
+
+WebDriverWait(c) extends FluentWait(c)implements Wait(I)
+================================================================
 8.Capabilities & Headless Testing
+Capabilities will help to customize any browser driver session
+chrome==>ChromeOptions class
+edge==>EdgeOptions class
+firefox=> FirefoxOptions class
+
+
+headless testing
+======================
 
 
 FrameWorks
