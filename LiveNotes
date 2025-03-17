@@ -671,8 +671,15 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 WebDriverWait(c) extends FluentWait(c)implements Wait(I)
 ================================================================
+17-03-2025
+================
 8.Capabilities & Headless Testing
+=====================================
 Capabilities will help to customize any browser driver session
+
+Capabilities are options that you can use
+ to customize and configure a ChromeDriver session.
+ 
 chrome==>ChromeOptions class
 edge==>EdgeOptions class
 firefox=> FirefoxOptions class
@@ -680,11 +687,108 @@ firefox=> FirefoxOptions class
 
 headless testing
 ======================
+Selenium 3:
+--------------
+HtmlUnitDriver 
 
+selenium 4
+--------------
+capability option= --headless
+
+
+File upload using Robot Class
+==================================
+import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.time.Duration;
+import java.awt.AWTException;
+import java.awt.Robot;
+
+//clipboard step ctrl+c
+StringSelection sc=new StringSelection("file path");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
+
+//ctrl+V
+ //keypress
+	keyPress(KeyEvent.VK_CONTROL);
+	keyPress(KeyEvent.VK_V);
+	  
+//key release
+	keyRelease(KeyEvent.VK_CONTROL);
+	keyRelease(KeyEvent.VK_V); 
+
+Meaning
+-----------
+1.StringSelection sc = new StringSelection("file path");
+StringSelection is a class in Java that implements the Transferable interface,
+which represents data that can be transferred to and from the clipboard.
+In this line, a new StringSelection object sc is created with the string
+"file path". This is the text that you want to copy to the clipboard.
+Replace "file path" with the actual file path or string you want to copy.
+ 
+2.Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
+Toolkit.getDefaultToolkit() retrieves the default Toolkit object
+ for the current environment, which provides a variety of
+  utility methods, including access to the system clipboard.
+getSystemClipboard() gives access to the system clipboard.
+setContents(sc, null) 
+copies the contents of the StringSelection 
+(the file path, in this case) to the clipboard.
+ The second argument (null) is a ClipboardOwner that is usually used to specify an object that will take care of the data if it's replaced, 
+but it can be null if you don't need that functionality.
+summary:
+This code copies the string "file path" to the system clipboard, 
+so you can then paste it anywhere (e.g., in a text editor, file explorer, etc.). 
+You can modify "file path" to be any string or file path that you wish to copy.
 
 FrameWorks
 ================
 1.TestNG
+===================
+
+TestNG Parameters
+========================
+1.priority: to execute test in sequence
+2.description
+3.timeOut
+4.invocationCount: to run test case for number of time
+4.enabled
+5.dependesOnMethods
+
+
+TestNG Assertion
+======================
+
+
+TestNG Annotation
+
+TestNG Data Passing
+=====================
+1.Using .xml file
+2.Using Properties file
+
+
+Data Driven Testing
+
+
+PageObject Model(Design pattern)
+--------------------------------
+
+Hybrid framework design
+-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 2.Hybrid 
 

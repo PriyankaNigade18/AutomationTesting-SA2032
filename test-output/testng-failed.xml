@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SeleniumWaits.ExplicitWait2UsingWebDriverWaitClass">
+      <class name="com.Capabilities.TestFileUploadUsingRobotclass">
         <methods>
-          <include name="testWait"/>
+          <include name="testFileUpload"/>
         </methods>
-      </class> <!-- com.SeleniumWaits.ExplicitWait2UsingWebDriverWaitClass -->
+      </class> <!-- com.Capabilities.TestFileUploadUsingRobotclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
