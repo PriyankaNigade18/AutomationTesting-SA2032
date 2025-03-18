@@ -750,18 +750,81 @@ FrameWorks
 TestNG Parameters
 ========================
 1.priority: to execute test in sequence
-2.description
-3.timeOut
+2.description: to give details about test
+3.timeOut:set the test case execution 
 4.invocationCount: to run test case for number of time
-4.enabled
-5.dependesOnMethods
+4.enabled:
+5.dependesOnMethods:
 
+Testng.xml file
+==================
+<suite name="Suite">:  collection of tests
+  <test thread-count="5" name="Test">: collection of classes
+    <classes>
+      <class name="com.TestNG.BasicScenario.TestDemo5_Usingxmldisabletest">
+      @Test chrome:Method
+      @Test firefox: method
+      @Test edge:method
+      
+      <methods>
+      <include name=""/>: include /add test in execution
+      <exclude name="firefox"/> : exclude /remove/disable test from current execution
+      </methods>
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+How to disable any test from current execution
+============================================
+1.using enabled=false parameter
+2.using testng.xml file
+
+How to run only fail testcase
+================================
+refresh the project--->open test-output folder--->open testng-failed.xml file
+and run this will run only fail test case
 
 TestNG Assertion
 ======================
+1.Hard assertion
+====================
+Assert class-it has all static method
+
+1.assertEquals(c1,c2):true,true==>pass otherwise fail
+2.assertTrue(c1): true===>pass otherwise fail
+3.assertFalse(c1):false===>pass otherwise fails
+
+2.SoftAssertion
+==================
+SoftAssert: it doen't have any static method
+
+=================================
+TestNG Annotation(Rules)
+=======================
+prerequisite/precoditions
+==================
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+
+Postconditons
+==================
+@AfterSuite
+@AfterTest
+@AfterClass
+@AfterMethod
 
 
-TestNG Annotation
+
+
+
+
+
+PageObject Model(Design pattern)
+--------------------------------
 
 TestNG Data Passing
 =====================
@@ -772,14 +835,12 @@ TestNG Data Passing
 Data Driven Testing
 
 
-PageObject Model(Design pattern)
---------------------------------
 
 Hybrid framework design
 -------------------------
 
 
-
+Cucumber
 
 
 

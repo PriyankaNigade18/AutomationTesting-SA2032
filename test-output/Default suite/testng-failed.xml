@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Capabilities.TestFileUploadUsingRobotclass">
+      <class name="com.TestNG.BasicScenario.TestDemo7_dependsOnMethods">
         <methods>
-          <include name="testFileUpload"/>
+          <include name="registerTest"/>
+          <include name="loginTest"/>
+          <include name="logoutTest"/>
         </methods>
-      </class> <!-- com.Capabilities.TestFileUploadUsingRobotclass -->
+      </class> <!-- com.TestNG.BasicScenario.TestDemo7_dependsOnMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

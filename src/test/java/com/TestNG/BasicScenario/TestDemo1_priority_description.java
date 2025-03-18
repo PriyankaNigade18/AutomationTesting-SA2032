@@ -1,6 +1,7 @@
 package com.TestNG.BasicScenario;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class TestDemo1_priority_description 
 {
