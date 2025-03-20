@@ -801,6 +801,8 @@ Assert class-it has all static method
 SoftAssert: it doen't have any static method
 
 =================================
+20-03-2025
+================
 TestNG Annotation(Rules)
 =======================
 prerequisite/precoditions
@@ -818,13 +820,17 @@ Postconditons
 @AfterMethod
 
 
-
-
-
-
-
 PageObject Model(Design pattern)
 --------------------------------
+- It is design Pattern
+- using page object we can implement Object repository in selenium
+
+- Ways
+==========
+1. Using By Locator(Without PageFactory)
+2. Using PageFactory class
+
+
 
 TestNG Data Passing
 =====================
@@ -833,7 +839,6 @@ TestNG Data Passing
 
 
 Data Driven Testing
-
 
 
 Hybrid framework design
