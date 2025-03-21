@@ -831,6 +831,12 @@ PageObject Model(Design pattern)
 2. Using PageFactory class
 
 
+21-03-2025
+==============
+Does Selenium have its own ObjectRepository?
+No
+We can implement Object repository using PageObject/using properties file
+-------------------
 
 TestNG Data Passing
 =====================
@@ -838,7 +844,32 @@ TestNG Data Passing
 2.Using Properties file
 
 
-Data Driven Testing
+Data Driven Testing(TestNG/Cucumber)
+====================================
+Executing same set of action with multiple data set multiple time
+
+1.Using Array
+2.Using Excel file: Apache POI Api/library
+
+logic
+=====
+wb-->sheet--->row--->cell-->value
+
+Classes
+------------------
+1.XSSFWorkbook
+2.XSSFSheet 
+3.XSSFRow
+4.XSSFCell
+
+
+
+
+
+
+
+
+
 
 
 Hybrid framework design
