@@ -1,18 +1,37 @@
 package com.generic;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utility 
 {
+	public static  void getScreenshot(WebDriver driver,String filename)
+	{
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		  
+		 File temp= ts.getScreenshotAs(OutputType.FILE);
+		  
+		  File dest=new File(System.getProperty("user.dir")+"//ScreenShots//"+filename+System.currentTimeMillis()+".png");
+		  try {
+			FileHandler.copy(temp,dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static WebElement waitForPresenceOfElement(WebDriver driver,By loc)
 	{
