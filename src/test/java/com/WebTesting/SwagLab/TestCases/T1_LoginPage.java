@@ -1,5 +1,7 @@
 package com.WebTesting.SwagLab.TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,5 +21,7 @@ public class T1_LoginPage extends BaseClass
   public void validateLogin()
   {
 	  lp.doLogin(prop.getData("un"),prop.getData("psw"));
+	  Assert.assertTrue(lp.getAppUrl().contains("inventory"),"Login Fail!");
+	  System.out.println("Login Completed..........");
   }
 }

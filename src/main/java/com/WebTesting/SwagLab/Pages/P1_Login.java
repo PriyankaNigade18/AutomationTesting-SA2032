@@ -29,7 +29,7 @@ public class P1_Login
 	
 	//actions
 	
-	public void doLogin(String un,String psw)
+	public P2_Inventory doLogin(String un,String psw)
 	{
 		username.sendKeys(un);
 		password.sendKeys(psw);
@@ -38,7 +38,7 @@ public class P1_Login
 		 * of application there we can add code to
 		 *  return that page object
 		 */
-		//return new P2_Inventory();
+		return new P2_Inventory(driver);
 		
 	}
 	
