@@ -56,7 +56,7 @@ public class P3_CartPage
 	{
 		checkoutbutton.click();
 		//navigated to checkout page
-		return new P4_CheckOut();
+		return new P4_CheckOut(driver);
 	}
 	
 	

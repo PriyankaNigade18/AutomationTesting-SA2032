@@ -18,6 +18,8 @@ public class BaseClass
 	public PropertiesUtil prop;
 	public P2_Inventory ip;
 	public P3_CartPage cp;
+	public P4_CheckOut ch;
+	public P5_Overview op;
 	
 	@BeforeClass
 	@Parameters({"bname"})
@@ -39,6 +41,9 @@ public class BaseClass
 		lp=new P1_Login(driver);
 		ip=new P2_Inventory(driver);
 		cp=new P3_CartPage(driver);
+		ch=new P4_CheckOut(driver);
+		op=new P5_Overview(driver);
+		
 		
 	}
 	
@@ -55,7 +60,7 @@ public class BaseClass
 	}
 	
 	
-	//@AfterClass
+	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
