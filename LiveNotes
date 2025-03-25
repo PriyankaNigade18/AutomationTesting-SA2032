@@ -862,20 +862,25 @@ Classes
 3.XSSFRow
 4.XSSFCell
 
-
-
-
-
-
-
-
-
-
-
+24-3-2025
 Hybrid framework design
 -------------------------
+Page Design
+Base Class Design
+TestCase
+Sequential Execution
+Parallel execution
 
+25-03-2025
+==================
+Listeners
+==========
+To ways to add listener to test case
+--------------------
+1.Using @Listeners()
+2.Using xml file
 
+Reports
 Cucumber
 
 
