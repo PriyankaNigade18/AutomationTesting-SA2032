@@ -6,8 +6,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/FeatureFiles/Google.feature",
-					glue={"com.stepdef","com.Hooks"})
-public class GoogleRunner {
+@CucumberOptions(features="src/test/resources/FeatureFiles/OpenCart.feature",
+					glue="com.stepdef")
+public class OpenCartRunner {
 
 }

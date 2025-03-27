@@ -6,8 +6,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/FeatureFiles/Google.feature",
+@CucumberOptions(features="src/test/resources/FeatureFiles/CRM.feature",
 					glue={"com.stepdef","com.Hooks"})
-public class GoogleRunner {
+public class CRMRunner {
 
 }
