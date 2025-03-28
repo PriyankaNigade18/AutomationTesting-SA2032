@@ -17,13 +17,7 @@ import io.cucumber.java.en.When;
 public class GoogleSearch {
 
 	WebDriver driver=BrowserProvider.getDriver();
-//	@Given("Open Google application")
-//	public void open_google_application()
-//	{
-//	    driver=new ChromeDriver();
-//	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//	    driver.get("https://www.google.com");
-//	}
+
 	
 	
 	@When("I enter valid keyword as {string} in search box")

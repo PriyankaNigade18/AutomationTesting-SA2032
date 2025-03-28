@@ -7,7 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/FeatureFiles/Google.feature",
-					glue={"com.stepdef","com.Hooks"})
+					glue={"com.stepdef","com.Hooks"},
+					plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+)
 public class GoogleRunner {
 
 }
