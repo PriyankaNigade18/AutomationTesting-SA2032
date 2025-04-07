@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ApiBasicRequest.GetRequestWithBDD">
+      <class name="com.ApiBasicRequest.AuthenticationTest">
         <methods>
-          <include name="testSingleUser"/>
+          <include name="testBasicAuthentication"/>
         </methods>
-      </class> <!-- com.ApiBasicRequest.GetRequestWithBDD -->
+      </class> <!-- com.ApiBasicRequest.AuthenticationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
