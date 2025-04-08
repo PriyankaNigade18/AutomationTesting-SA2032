@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -67,7 +69,7 @@ public class GetRequestWithBDD {
 	  
 	  //validate  status code
 	  int statuscode=res.getStatusCode();
-	  Assert.assertEquals(statuscode,200);
+	  AssertJUnit.assertEquals(statuscode,200);
 	  System.out.println("status code matched...");
 	  
 	  //log the body
@@ -75,7 +77,7 @@ public class GetRequestWithBDD {
 	  
 	  //jsonvalidation
 	  int records=res.jsonPath().getInt("total");
-	  Assert.assertEquals(records,12);
+	  AssertJUnit.assertEquals(records,12);
 	  System.out.println("Records matched..."+records);
 	  
   }

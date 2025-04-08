@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -43,7 +45,7 @@ public class CreateRequestUsingPathAndQueryParam {
 	 
 	 //assertion
 	 
-	 Assert.assertEquals(res.getStatusCode(),200);
+	 AssertJUnit.assertEquals(res.getStatusCode(),200);
 	 System.out.println("Status code matched...");
 	 
 	 //log the payload
@@ -72,7 +74,7 @@ public class CreateRequestUsingPathAndQueryParam {
 		 
 		 //assertion
 		 
-		 Assert.assertEquals(res.getStatusCode(),200);
+		 AssertJUnit.assertEquals(res.getStatusCode(),200);
 		 System.out.println("Status code matched...");
 		 
 		 //log the payload

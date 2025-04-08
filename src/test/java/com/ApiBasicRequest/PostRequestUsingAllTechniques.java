@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -104,7 +106,7 @@ public class PostRequestUsingAllTechniques {
 			  //valiadation
 			  
 			 String un= auth.getUsername();
-	  Assert.assertEquals(un,"admin");
+	  AssertJUnit.assertEquals(un,"admin");
 	  System.out.println("User name is matched...");
 	  
 	  

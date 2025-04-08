@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.List;
 
 import org.testng.Assert;
@@ -56,12 +58,12 @@ public class ValidateServerResponse
 	  //validate page number should be 2
 	  int pageno=res.jsonPath().getInt("page");
 	  
-	  Assert.assertEquals(pageno,2);
+	  AssertJUnit.assertEquals(pageno,2);
 	  System.out.println("Page number is matched..:"+pageno);
 	  
 	  //validate id for 3rd record which should be 9
 	  int id=res.jsonPath().getInt("data[2].id");
-	  Assert.assertEquals(id,9);
+	  AssertJUnit.assertEquals(id,9);
 	  System.out.println("3rd Record id matched to 9");
 	  
 	  //validate total ids are 6

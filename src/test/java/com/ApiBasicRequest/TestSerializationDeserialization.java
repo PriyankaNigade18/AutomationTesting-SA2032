@@ -1,6 +1,7 @@
 package com.ApiBasicRequest;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.APIPOJOClasses.AuthPOJO;
 import com.fasterxml.jackson.core.JsonProcessingException;

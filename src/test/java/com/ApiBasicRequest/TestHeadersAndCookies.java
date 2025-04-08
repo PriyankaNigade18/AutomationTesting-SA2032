@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -39,7 +41,7 @@ public class TestHeadersAndCookies {
 	  String exp="text/html; charset=ISO-8859-1";
 	  String actHeader=res.getHeader("Content-Type");
 	  
-	  Assert.assertEquals(actHeader,exp);
+	  AssertJUnit.assertEquals(actHeader,exp);
 	  System.out.println("Content type is matched....");
 	  
 	    
@@ -64,7 +66,7 @@ public class TestHeadersAndCookies {
 	  
 	  String actCookie=res.getCookie("NID");
 	  
-	  Assert.assertFalse(actCookie.contains(exp));
+	  AssertJUnit.assertFalse(actCookie.contains(exp));
 	  System.out.println("Test Pass: As cookies are not same!");
 	  
 	  

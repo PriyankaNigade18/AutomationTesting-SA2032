@@ -1,5 +1,7 @@
 package com.ApiBasicRequest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -62,7 +64,7 @@ public class APIChainingForRestBooker
 	  
 	  //Assert status code
 	 int statusCode=res.getStatusCode();
-	 Assert.assertEquals(statusCode,200);
+	 AssertJUnit.assertEquals(statusCode,200);
 	 System.out.println("Status code matched..."+statusCode);
 	  
 	  //get the reponse body in console
@@ -82,7 +84,7 @@ public class APIChainingForRestBooker
 			  .when().get("https://restful-booker.herokuapp.com/booking/"+bookingId);
 	  
 	  
-	  Assert.assertEquals(res.getStatusCode(),200);
+	  AssertJUnit.assertEquals(res.getStatusCode(),200);
 	  System.out.println("Status code is matched...."+res.getStatusCode());
 	  
 	  //log the result
@@ -110,7 +112,7 @@ public class APIChainingForRestBooker
 	  			.when().post("https://restful-booker.herokuapp.com/auth");
 	  	
 	  	
-	  	Assert.assertEquals(res.getStatusCode(),200);
+	  	AssertJUnit.assertEquals(res.getStatusCode(),200);
 	  	System.out.println("Status code matched..");
 	  	
 	  	//log
@@ -154,7 +156,7 @@ public class APIChainingForRestBooker
 	  
 	  		.when().put("https://restful-booker.herokuapp.com/booking/"+bookingId);
 	  
-	  	Assert.assertEquals(res.getStatusCode(),200);
+	  	AssertJUnit.assertEquals(res.getStatusCode(),200);
 	  	System.out.println("Status code matched..");
 	  	
 	  	//log
@@ -178,7 +180,7 @@ public class APIChainingForRestBooker
 	  
 	  //Assertion
 	  
-	  Assert.assertEquals(res.getStatusCode(),201);
+	  AssertJUnit.assertEquals(res.getStatusCode(),201);
 	  System.out.println("Current booking is deleted for id: "+bookingId);
 	  
 	  
