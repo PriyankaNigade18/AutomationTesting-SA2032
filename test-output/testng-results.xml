@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T22:36:55 IST" name="Default suite" finished-at="2025-04-10T22:37:15 IST" duration-ms="20275">
+  <suite started-at="2025-04-11T22:22:25 IST" name="Default suite" finished-at="2025-04-11T22:22:38 IST" duration-ms="12173">
     <groups>
     </groups>
-    <test started-at="2025-04-10T22:36:55 IST" name="Default test" finished-at="2025-04-10T22:37:15 IST" duration-ms="20275">
-      <class name="com.DriverSessions.DriverSessionUsingDesiredCapabilities">
-        <test-method signature="testDriverSession()[pri:0, instance:com.DriverSessions.DriverSessionUsingDesiredCapabilities@5c33f1a9]" started-at="2025-04-10T22:36:55 IST" name="testDriverSession" finished-at="2025-04-10T22:37:15 IST" duration-ms="20176" status="PASS">
+    <test started-at="2025-04-11T22:22:25 IST" name="Default test" finished-at="2025-04-11T22:22:38 IST" duration-ms="12173">
+      <class name="com.TestMobileElementScenarios.TestScrollGesture">
+        <test-method signature="testGesture()[pri:0, instance:com.TestMobileElementScenarios.TestScrollGesture@6973b51b]" started-at="2025-04-11T22:22:26 IST" name="testGesture" finished-at="2025-04-11T22:22:38 IST" duration-ms="12100" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDriverSession -->
-      </class> <!-- com.DriverSessions.DriverSessionUsingDesiredCapabilities -->
+        </test-method> <!-- testGesture -->
+      </class> <!-- com.TestMobileElementScenarios.TestScrollGesture -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
