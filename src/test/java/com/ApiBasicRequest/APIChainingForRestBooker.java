@@ -167,7 +167,38 @@ public class APIChainingForRestBooker
 	  
   }
   
+  
   @Test(priority=5)
+  public void partialUpdate()
+  {//payload
+	  
+	  BookingDates date=new BookingDates();
+	  date.setCheckin("2025-04-08");
+	  date.setCheckout("2025-04-09");
+			  
+	  
+	  BookingDetails booking=new BookingDetails();
+	  booking.setFirstname("Sarang");
+	  booking.setLastname("Sharma");
+	 booking.setBookingdates(date);
+	  
+	  Response res=given()
+			  .header("Content-Type","application/json")
+			  .header("Accept","application/json")
+	  		.header("Cookie","token="+tokenValue)
+	  		.body(booking)
+	  	
+	  		.when().patch("https://restful-booker.herokuapp.com/booking/"+bookingId);
+	  
+	  System.out.println(res.getStatusCode());
+	  res.then().log().body();
+	  
+	  
+	  
+  }
+  
+  
+  @Test(priority=6)
   public void deleteBooking()
   {
 	  
