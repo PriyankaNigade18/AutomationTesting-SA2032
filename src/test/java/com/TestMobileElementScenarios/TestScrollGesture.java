@@ -5,6 +5,7 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.Test;
 
 import com.Utilities.DriverUtil;
+import com.Utilities.ElementUtil;
 import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
@@ -26,6 +27,9 @@ public class TestScrollGesture {
 	  WebElement area=driver.findElement(AppiumBy.id("android:id/list"));
 	  
 	  
+	  ElementUtil.scrollDownUpToCount(driver,area,2);
+	  
+	  /*
 	  //scrollgesture
 	  driver.executeScript("mobile:scrollGesture",ImmutableMap.of(
 			  "elementId",((RemoteWebElement)area).getId(),
@@ -36,7 +40,7 @@ public class TestScrollGesture {
 	  
 	  System.out.println("Page is Scrolling down!");
 	  
-	  
+	  */
 	  
 	  
 	  

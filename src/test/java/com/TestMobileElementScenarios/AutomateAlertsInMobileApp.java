@@ -1,0 +1,83 @@
+package com.TestMobileElementScenarios;
+
+import org.openqa.selenium.Alert;
+import org.testng.annotations.Test;
+
+import com.Utilities.DriverUtil;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+
+public class AutomateAlertsInMobileApp {
+  @Test
+  public void testAlert() throws InterruptedException 
+  {
+	  /*
+	   * In Selenium we handle the Alerts using Alert interface
+	   * 
+	   * 1.getText(): text of alert
+	   * 2.accept(): Ok
+	   * 3.dismiss(): Cancel
+	   * 4.sendKeys(): prompt type alert
+	   * 
+	   * 
+	   */
+	  
+	  
+	  //create a driver session
+	  AppiumDriver driver=DriverUtil.initAppiumDriver();
+	  
+	  //app
+	  driver.findElement(AppiumBy.accessibilityId("App")).click();
+	  
+	  //alerts option
+	  driver.findElement(AppiumBy.accessibilityId("Alert Dialogs")).click();
+	  
+	  
+	  //alert1
+	  driver.findElement(AppiumBy.accessibilityId("OK Cancel dialog with a message")).click();
+	  
+	  //alert will open
+	  
+	  Alert alt1=driver.switchTo().alert();
+	  System.out.println("Alert1 Text is: "+alt1.getText());
+	  
+	  //ok
+	  alt1.accept();
+	  
+	  System.out.println("Alert1 handled ......");
+	  Thread.sleep(3000);
+	  
+	  //alert2
+	  driver.findElement(AppiumBy.accessibilityId("OK Cancel dialog with ultra long message")).click();
+	  
+	  Alert alt2=driver.switchTo().alert();
+	  
+	  System.out.println("Alert 2 text is: "+alt2.getText());
+	  
+	  //cancel
+	  alt2.dismiss();
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  }
+}
