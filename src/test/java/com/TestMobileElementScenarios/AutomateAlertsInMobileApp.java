@@ -1,5 +1,6 @@
 package com.TestMobileElementScenarios;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.Alert;
 import org.testng.annotations.Test;
 

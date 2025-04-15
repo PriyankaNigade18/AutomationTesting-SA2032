@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-14T22:14:40 IST" name="Default suite" finished-at="2025-04-14T22:14:51 IST" duration-ms="11454">
+  <suite started-at="2025-04-15T22:06:35 IST" name="Default suite" finished-at="2025-04-15T22:06:50 IST" duration-ms="15865">
     <groups>
     </groups>
-    <test started-at="2025-04-14T22:14:40 IST" name="Default test" finished-at="2025-04-14T22:14:51 IST" duration-ms="11454">
-      <class name="com.SpecialScenarios.TestNotifications">
-        <test-method signature="testNotifications()[pri:0, instance:com.SpecialScenarios.TestNotifications@6973b51b]" started-at="2025-04-14T22:14:40 IST" name="testNotifications" finished-at="2025-04-14T22:14:51 IST" duration-ms="11386" status="PASS">
+    <test started-at="2025-04-15T22:06:35 IST" name="Default test" finished-at="2025-04-15T22:06:50 IST" duration-ms="15865">
+      <class name="com.TestMobileElementScenarios.TestDragGesture">
+        <test-method signature="testDragGesture()[pri:0, instance:com.TestMobileElementScenarios.TestDragGesture@61862a7f]" started-at="2025-04-15T22:06:35 IST" name="testDragGesture" finished-at="2025-04-15T22:06:50 IST" duration-ms="15778" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testNotifications -->
-      </class> <!-- com.SpecialScenarios.TestNotifications -->
+        </test-method> <!-- testDragGesture -->
+      </class> <!-- com.TestMobileElementScenarios.TestDragGesture -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -13,10 +13,6 @@ https://github.com/appium/appium-uiautomator2-driver/blob/2d02006eaf1e5a62acfbc3
 
 
 
-
-
-
-
 https://www.simplilearn.com/enable-virtualization-windows-10-article
 
 
@@ -171,6 +167,9 @@ download latest version HAXM and install it
 
  https://github.com/intel/haxm/wiki/Installation-Instructions-on-Windows
 
+Performance Parameters
+-========================
+https://appium.readthedocs.io/en/latest/en/commands/device/performance-data/get-performance-data/#get-performance-data
 
 
 
@@ -187,8 +186,9 @@ Note: Steps can differ based on the phone manufacturer!
 Google: https://developer.android.com/studio/run/win-usb
 OEMs: https://developer.android.com/studio/run/oem-usb
 
-
-
+Automation With Priyanka
+===========================
+https://youtu.be/9w91r-uaFoM?si=D7v-Qwnl5kZYAJDZ
 
 
 
