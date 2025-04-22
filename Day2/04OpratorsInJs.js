@@ -7,8 +7,8 @@ Logical Operators
 
 Equality
 --------------
-1.loose equality
-2.strict equality
+1.loose equality(==)
+2.strict equality(===)
 
 */
 

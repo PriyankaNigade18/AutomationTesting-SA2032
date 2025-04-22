@@ -1,0 +1,11 @@
+
+Assignment1: 
+Write a js code for testing given number is positive or negative
+
+
+Assignment2: 
+Write a js code for testing given number is even or odd
+
+
+Assignment3: 
+Write a js code for testing given number is prime number
