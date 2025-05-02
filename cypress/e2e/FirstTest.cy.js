@@ -1,5 +1,5 @@
 
-/// <reference types="Cypress" />
+/*/// <reference types="Cypress" />*/
 
 //test suite
 describe('This is test suite1',()=>{

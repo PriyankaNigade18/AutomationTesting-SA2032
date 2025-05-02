@@ -32,7 +32,7 @@ cy.get("loc").then(($ele)=>{
 
                 cy.visit("https://www.google.com");
 
-                cy.title().then((appTitle)=>{
+                cy.title().then((appTitle)=>{//appTitle is variable name
                     
                 cy.log("Application title is"+appTitle)
 
@@ -44,7 +44,7 @@ cy.get("loc").then(($ele)=>{
                 cy.visit("https://www.google.com");
 
                
-                cy.url().then((appUrl)=>{
+                cy.url().then((appUrl)=>{//appUrl is variable name
 
                     cy.log("Application url is: "+appUrl)
                 })
@@ -62,6 +62,28 @@ cy.get("loc").then(($ele)=>{
             })
 
             //next class element interaction click() type()
+
+            it('test input box email for opencart application',()=>{
+
+                cy.visit("https://tutorialsninja.com/demo/index.php?route=account/login");
+
+                //webelement -email input box
+                //cy.get("#input-email").type("test@gmail.com");
+
+                //store webelement into variable and then perform action: then()+wrap()
+                cy.get("#input-email").then(($email)=>{//email is variable name
+
+                    cy.wrap($email).click();
+                    cy.wrap($email).type("test123@gmail.com");
+                })
+            })
+
+
+
+
+
+
+
 
         })
 
