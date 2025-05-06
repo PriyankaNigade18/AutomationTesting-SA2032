@@ -28,10 +28,10 @@ cy.get("i.oxd-userdropdown-icon").click();
 //cy.contains("Logout").click();
 
 //click on logout link using cssSelector
-//cy.get("ul[class='oxd-dropdown-menu']>li:nth-child(4)>a").click();
+cy.get("ul[class='oxd-dropdown-menu']>li:nth-child(4)>a").click();
 
 //using xpath in cypress
-cy.xpath("(//ul[@class='oxd-dropdown-menu']//li//a)[4]").click();
+//cy.xpath("(//ul[@class='oxd-dropdown-menu']//li//a)[4]").click();
 
 }) 
 
