@@ -17,12 +17,13 @@ describe("This is for cypress tags suite1",()=>{
 it.only("This is test1",()=>{
 
     cy.visit("https://www.google.com")
+    cy.screenshot();
 
 })
 it.only("This is test2",()=>{
 
     cy.visit("https://automationplayground.com/crm/")
-    
+    cy.screenshot("Crmpage")
 })
 
 it("This is test3",()=>{

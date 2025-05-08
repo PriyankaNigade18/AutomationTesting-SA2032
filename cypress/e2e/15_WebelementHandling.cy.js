@@ -62,7 +62,7 @@ it.only("test for multiple checkbox interaction",()=>{
     cy.get("div#checkbox-example-div>fieldset>label>input").first().check();
 
     //middle
-cy.get("div#checkbox-example-div>fieldset>label>input").eq(1).check();
+    cy.get("div#checkbox-example-div>fieldset>label>input").eq(1).check();
 
 
 
