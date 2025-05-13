@@ -7,7 +7,6 @@ test("Launch of google application",async({page})=>{
 //launch application :google
 await page.goto("https://www.google.com/");
 
-
 })
 
 
