@@ -10,6 +10,7 @@ test("Test Title and Url of Google",async({page})=>{
     const actUrl= await page.url();
     console.log("Application url is: "+actUrl);
 
+    
     //validation for url
     await expect(page).toHaveURL("https://www.google.com/");
 
